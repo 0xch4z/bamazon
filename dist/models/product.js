@@ -57,9 +57,6 @@ class Product extends _objection.Model {
     var _this2 = this;
 
     return (0, _asyncToGenerator3.default)(function* () {
-      if (quantity > _this2.quantity) {
-        throw Error('Quantity out of bounds');
-      }
       yield _this2.setQuantity(_this2.quantity - quantity);
     })();
   }

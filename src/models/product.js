@@ -70,9 +70,6 @@ export default class Product extends Model {
   }
 
   async purchase(quantity) {
-    if (quantity > this.quantity) {
-      throw Error('Quantity out of bounds')
-    }
     await this.setQuantity(this.quantity - quantity)
   }
 

@@ -53,6 +53,10 @@ class CustomerClient extends _client2.default {
         }
       });
 
+      if (quantity > product.quantity) {
+        return console.log(`\nInsufficient quantity! There are ${product.quantity} left in stock 😢`);
+      }
+
       yield product.purchase(parseInt(quantity));
       const amount = (product.price * quantity).toFixed(2);
 
