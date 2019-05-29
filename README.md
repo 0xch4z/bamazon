@@ -1,3 +1,6 @@
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Charliekenney23/bamazon.svg)](https://greenkeeper.io/)
+
 <h1 align="center">✨ Bamazon 📦</h1>
 <p align="center">A UNC-CH CB homework assignment</p>
 
